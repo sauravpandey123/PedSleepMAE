@@ -3,5 +3,12 @@
 ## News 
 * PedSleepMAE was accepted at IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI’24)!
 
-## Dataset Preparation and Preprocessing
-For each patient, there is a corresponding EDF file consisting of the sleep signals and an annotation file consisting of the various events occuring during sleep. Once they have been downloaded, we want to convert each example into an HDF5 format, which is known for its easy and quick access during training. Out of the many modaltiies present in the files, we extract the 16 most common ones listed in the paper and standardize them. Each HDF5 file also contains its patient and study ID, along with corresponding sleep stage, apnea label, hypopnea label, oxygen desaturation label, and EEG arousal label. We then randomly select 128 individual examples and store them as an HDF5 files. These will be the files we will be using when training our model. 
+## 1. Dataset Preparation and Preprocessing
+Each patient has an EDF file containing raw sleep signals and an annotation file documenting events such as sleep stages, apnea, and other physiological occurrences. These files are processed into the **HDF5** format to enable efficient and scalable data access during training. 
+
+From the raw data, the 16 most common modalities identified in the study are extracted, and all signals are standardized for consistency. Each example is first converted into an individual HDF5 file, which includes patient and study IDs, sleep stage labels, and event labels such as apnea, hypopnea, oxygen desaturation, and EEG arousal. To optimize training workflows, 128 individual examples are then grouped into a single HDF5 batch file. This pipeline ensures fast data access, efficient batching, and scalability for machine learning workflows.
+
+`1_prepare_dataset.py` handles the above operations. 
+
+## 2. Pretraining
+

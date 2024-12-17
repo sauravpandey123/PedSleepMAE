@@ -15,3 +15,4 @@ We make use of a [Masked Autoencoder](https://arxiv.org/pdf/2111.06377) architec
 
 Run `2_pretrain_model.py` to pretrain the model.
 
+## 3. Training Linear Classifiers

@@ -11,7 +11,7 @@ From the raw data, the 16 most common modalities identified in the study are ext
 `1_prepare_dataset.py` handles the above operations. 
 
 ## 2. Pretraining
-We make use of a Masked Autoencoder architecture for pretraining and learning rich representations from pediatric sleep signals. Our model is very large, with about 76 million parameters, and this step requires a long time -- two to three weeks usually -- to start seeing good results. GPU support is highly recommended. 
+We make use of a Masked Autoencoder architecture for pretraining and learning rich representations from pediatric sleep signals. Our model is very large, with about 76 million parameters, and this step requires a long time - two to three weeks  - to start seeing good results. GPU support is highly recommended. 
 
 Run `2_pretrain_model.py` for pretraining. 
 

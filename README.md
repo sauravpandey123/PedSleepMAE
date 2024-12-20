@@ -28,7 +28,7 @@ We can perform downstream classification tasks, such as sleep scoring, apnea det
 Run `3_1_train_classifier.py` for this step.
 
 ### 3.2 Visualization using Uniform Manifold Approximation and Projection (UMAP)
-We employ UMAP to reduce our embeddings into two dimensions and visualize them. This step can be performed on just a single patient by specifying their patient ID or on randomly selected patients. To avoid cluttering in the plots, we only plot a maximum of 600 examples from each sub-label (e.g. 600 from apnea, no apnea each). 
+We employ UMAP to reduce our embeddings into two dimensions and visualize them. This step can be performed on just a single patient by specifying their patient ID or on randomly selected patients. To avoid cluttering in the plots, we only plot a maximum of 600 random examples from each sub-label (e.g. 600 from apnea, no apnea each). 
 
 Run `3_2_get_UMAP.py` to handle the above operations. 
 

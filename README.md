@@ -19,7 +19,7 @@ Run `2_pretrain_model.py` to pretrain the model.
 
 
 ## 3. Evaluating Diagnostic Information in the Embeddings 
-In this part, we evaluate how much diagnostic information is in the embeddings from the PedSleepMAE encoder. We have rich Electronic Health Records (EHR) and annotated clinician-verified sleep events. We fully utilize the rich Electronic Health Records (EHR) and annotated clinician-verified sleep events to quantitatively and qualitatively measure how well various sleep events are separated in the embedding space.
+We evaluate the diagnostic information in the embeddings from the encoder of PedSleepMAE using rich EHR data and clinician-verified sleep events to assess how well various sleep events are separated in the embedding space, both quantitatively and qualitatively.
 
 
 ### 3.1 Training Linear Classifiers

@@ -32,4 +32,4 @@ We employ UMAP to reduce our embeddings into two dimensions and visualize them. 
 
 Run `3_2_get_UMAP.py` to handle the above operations. 
 
-### 
+### 3.3 Prader-Willi Syndrome (PWS) Cluster Analysis

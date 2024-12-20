@@ -33,4 +33,8 @@ We employ UMAP to reduce our embeddings into two dimensions and visualize them. 
 Run `3_2_get_UMAP.py` to handle the above operations. 
 
 ### 3.3. Prader-Willi Syndrome (PWS) Cluster Analysis
-To perform cluster analysis on PWS patients versus non-PWS patients, we provide the script `3_3_PWS_cluster_analysis.py`. First, it loads the provided maxpooled PWS and non-PWS embeddings (stored inside `experiments_config/PWS`) and uses them to compare the true silhouette score against silhouette score of randomly shuffled labels. This experiment can be customized by selecting varying number of random samples to select from each class, number of times to repeat the sampling process, and the number of times to repeat the entire process. 
+To perform cluster analysis on PWS patients versus non-PWS patients, we provide the script `3_3_PWS_cluster_analysis.py`. It loads the provided maxpooled PWS and non-PWS embeddings (stored inside `experiments_config/PWS`) and uses them to compare the true silhouette score against silhouette score of randomly shuffled labels.
+
+## 4. Accuracy of the Generated Signals
+
+### 4.1. Correlation between distances in embedding space and signal space

@@ -17,5 +17,12 @@ Run `2_pretrain_model.py` to pretrain the model.
 
 **Note:** We provide the latest checkpoint of our pretrained model at `checkpoint/m15p8_checkpoint.pt` if you want to skip this step and proceed with the following experiments.
 
-## 3. Training Linear Classifiers
-Once the model is pretrained, we can perform downstream classification tasks, such as sleep scoring, apnea detection, etc, by fitting linear classifiers on top of the embeddings. 
+
+## 3. Evaluating Diagnostic Information in the Embeddings 
+In this part, we evaluate how much diagnostic information is in the embeddings from the PedSleepMAE encoder. We have rich Electronic Health Records (EHR) and annotated clinician-verified sleep events. We fully utilize the rich Electronic Health Records (EHR) and annotated clinician-verified sleep events to quantitatively and qualitatively measure how well various sleep events are separated in the embedding space.
+
+
+### 3.1 Training Linear Classifiers
+Once the model is pretrained, we can perform downstream classification tasks, such as sleep scoring, apnea detection, etc, by fitting linear classifiers on top of the embeddings extracted from our pretrained model's encoder.
+
+Run `3_train_classifier.py` for this step.

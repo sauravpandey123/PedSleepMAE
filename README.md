@@ -15,4 +15,7 @@ We make use of a [Masked Autoencoder](https://arxiv.org/pdf/2111.06377) architec
 
 Run `2_pretrain_model.py` to pretrain the model.
 
+Note: We provide the latest checkpoint of our pretrained model at `checkpoint/m15p8_checkpoint.pt` if you want to skip this step and proceed with the following experiments.
+
 ## 3. Training Linear Classifiers
+Once the model is pretrained, we can perform downstream classification tasks, such as sleep scoring, apnea detection, etc, by fitting linear classifiers on top of the embeddings. 

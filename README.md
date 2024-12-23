@@ -38,3 +38,4 @@ To perform cluster analysis on PWS patients versus non-PWS patients, we provide 
 ## 4. Accuracy of the Generated Signals
 
 ### 4.1. Correlation between distances in embedding space and signal space
+To examine the correlation between the distances of the examples in embedding space versus signal space, we provide the script `4_1_correlation_between_spaces.py`. The script allows to select between looking at the examples of a particular patient versus randomly selected examples of all patients. The distances can be calculated using either Euclidean distances or Dynamic Time Warping (DTW). 

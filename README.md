@@ -4,8 +4,8 @@
 * PedSleepMAE was accepted at IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI’24)!
 
 
-## 0. Downloading Dataset
-We work with the Nationwide Children's Hospital (NCH) Sleep DataBank, a large, public, and fairly recent pediatric Polysomnography (PSG) dataset collected in a real clinical setting. 
+## 0. Downloading the Dataset
+We work with the **Nationwide Children's Hospital (NCH) Sleep DataBank**, a large, public, and fairly recent pediatric Polysomnography (PSG) dataset collected in a real clinical setting. 
 The dataset is available to download from [Physionet](https://physionet.org/content/nch-sleep/3.1.0/). Please take a look at the requirements that need to be met before the dataset can be downloaded.
 
 
@@ -21,7 +21,7 @@ We make use of a [Masked Autoencoder](https://arxiv.org/pdf/2111.06377) architec
 
 Run `2_pretrain_model.py` to pretrain the model.
 
-**Note:** We provide the latest checkpoint of our pretrained model at `checkpoint/m15p8_checkpoint.pt` if you want to skip this step and proceed with the following experiments.
+**Note: We provide the latest checkpoint of our pretrained model at `checkpoint/m15p8_checkpoint.pt` if you want to skip this step and proceed with the following experiments. **
 
 ## 3. Evaluating Diagnostic Information in the Embeddings 
 Once PedSleepMAE is sufficiently pretrained, we evaluate the diagnostic information in the embeddings from the encoder of PedSleepMAE. Using rich EHR data and clinician-verified sleep events, we assess how well various sleep events are separated in the embedding space, both quantitatively and qualitatively. 

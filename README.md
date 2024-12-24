@@ -1,6 +1,6 @@
 # PedSleepMAE (Pediatric Sleep Masked Autoencoder)
 
-## News 
+## :loudspeaker: News 
 * PedSleepMAE was accepted at IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI’24)!
 * Our [paper](https://arxiv.org/abs/2411.00718) is available on arXiv! 
 

@@ -17,10 +17,8 @@ Run `2_pretrain_model.py` to pretrain the model.
 
 **Note:** We provide the latest checkpoint of our pretrained model at `checkpoint/m15p8_checkpoint.pt` if you want to skip this step and proceed with the following experiments.
 
-
 ## 3. Evaluating Diagnostic Information in the Embeddings 
 Once PedSleepMAE is sufficiently pretrained, we evaluate the diagnostic information in the embeddings from the encoder of PedSleepMAE. Using rich EHR data and clinician-verified sleep events, we assess how well various sleep events are separated in the embedding space, both quantitatively and qualitatively. 
-
 
 ### 3.1. Training Linear Classifiers
 We can perform downstream classification tasks, such as sleep scoring, apnea detection, etc, by fitting linear classifiers on top of the embeddings extracted from our pretrained model's encoder.
@@ -40,3 +38,10 @@ After establishing the usefulness of the embeddings, we bring the decoder back i
 
 ### 4.1. Correlation between distances in embedding space and signal space
 To examine the correlation between the distances, which can be calculated using either Euclidean distances or Dynamic Time Warping (DTW), of the examples in embedding space versus signal space, we provide the script `4_1_correlation_between_spaces.py`. 
+
+### 4.2. Generating and Retrieving Representative Examples
+Next, we can tackle representative signal generation and retrieval by considering a single patient, its sleep examples related to an event (e.g. REM sleep stage, apnea, etc), generating an average example, and retrieving an actual data sample closest or furthest from this mean.
+
+Run `4_2_generate_average_examples.py` to handle the above operations. 
+
+

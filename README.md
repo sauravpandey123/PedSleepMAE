@@ -1,4 +1,4 @@
-# PedSleepMAE (Pediatric Sleep Masked Autoencoder)
+<h1 align="center">PedSleepMAE (Pediatric Sleep Masked Autoencoder)</h1>
 
 ## :loudspeaker: News 
 * PedSleepMAE was accepted at IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI’24)!

@@ -59,4 +59,5 @@ Next, we can tackle representative signal generation and retrieval by considerin
 Run `4_2_generate_average_examples.py` to handle the above operations. 
 
 ### 4.3. Channel Imputation 
+Run `4_3_channel_imputation.py` to run the experiment for missing channel imputation, where we systematically remove one channel at a time and let PedSleepMAE reconstruct the missing signal based on the other 15 channels. 
 

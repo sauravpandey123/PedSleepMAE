@@ -3,6 +3,12 @@
 ## News 
 * PedSleepMAE was accepted at IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI’24)!
 
+
+## 0. Downloading Dataset
+We work with the Nationwide Children's Hospital (NCH) Sleep DataBank, a large, public, and fairly recent pediatric Polysomnography (PSG) dataset collected in a real clinical setting. 
+The dataset is available to download from [Physionet](https://physionet.org/content/nch-sleep/3.1.0/). Please take a look at the requirements that need to be met before the dataset can be downloaded.
+
+
 ## 1. Dataset Preparation and Preprocessing
 Each patient has an EDF file containing raw sleep signals and an annotation file documenting events such as sleep stages, apnea, and other physiological occurrences. These files are processed into the **HDF5** format to enable efficient and scalable data access during training. 
 

@@ -44,4 +44,5 @@ Next, we can tackle representative signal generation and retrieval by considerin
 
 Run `4_2_generate_average_examples.py` to handle the above operations. 
 
+### 4.3. Channel Imputation 
 

@@ -28,7 +28,7 @@ We can perform downstream classification tasks, such as sleep scoring, apnea det
 Run `3_1_train_classifier.py` for this step.
 
 ### 3.2. Visualization using Uniform Manifold Approximation and Projection (UMAP)
-We employ UMAP to reduce our embeddings into two dimensions and visualize them. This step can be performed on just a single patient by specifying their patient ID or on randomly selected patients. To avoid cluttering in the plots, we only plot a maximum of 600 random examples from each sub-label (e.g. 600 from apnea, no apnea each). 
+We employ UMAP to reduce our embeddings into two dimensions and visualize them. This step can be performed on just a single patient by specifying their patient ID or on randomly selected patients. 
 
 Run `3_2_get_UMAP.py` to handle the above operations. 
 
@@ -36,6 +36,7 @@ Run `3_2_get_UMAP.py` to handle the above operations.
 To perform cluster analysis on PWS patients versus non-PWS patients, we provide the script `3_3_PWS_cluster_analysis.py`. It loads the provided maxpooled PWS and non-PWS embeddings (stored inside `experiments_config/PWS`) and uses them to compare the true silhouette score against silhouette score of randomly shuffled labels.
 
 ## 4. Accuracy of the Generated Signals
+After establishing the usefulness of the embeddings, we bring the decoder back into the picture and see how it can be used to retrieve representative examples or impute missing channels.
 
 ### 4.1. Correlation between distances in embedding space and signal space
-To examine the correlation between the distances of the examples in embedding space versus signal space, we provide the script `4_1_correlation_between_spaces.py`. The script allows to select between looking at the examples of a particular patient versus randomly selected examples of all patients. The distances can be calculated using either Euclidean distances or Dynamic Time Warping (DTW). 
+To examine the correlation between the distances, which can be calculated using either Euclidean distances or Dynamic Time Warping (DTW), of the examples in embedding space versus signal space, we provide the script `4_1_correlation_between_spaces.py`. 

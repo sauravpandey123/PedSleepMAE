@@ -12,7 +12,7 @@ Pediatric sleep is an important but often overlooked area in health informatics.
 
 
 # :computer: User Guide 
-## :inbox_tray: 0. Downloading the Dataset
+## :inbox_tray:  0. Downloading the Dataset
 We work with the **Nationwide Children's Hospital (NCH) Sleep DataBank**, a large, public, and fairly recent pediatric Polysomnography (PSG) dataset collected in a real clinical setting. 
 The dataset is available to download from [Physionet](https://physionet.org/content/nch-sleep/3.1.0/). Please take a look at the requirements that need to be met before the dataset can be downloaded.
 

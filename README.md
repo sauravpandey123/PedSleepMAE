@@ -21,7 +21,7 @@ We make use of a [Masked Autoencoder](https://arxiv.org/pdf/2111.06377) architec
 
 Run `2_pretrain_model.py` to pretrain the model.
 
-**Note: We provide the latest checkpoint of our pretrained model at `checkpoint/m15p8_checkpoint.pt` if you want to skip this step and proceed with the following experiments. **
+**Note: We provide the latest checkpoint of our pretrained model at `checkpoint/m15p8_checkpoint.pt` if you want to skip this step and proceed with the following experiments.**
 
 ## 3. Evaluating Diagnostic Information in the Embeddings 
 Once PedSleepMAE is sufficiently pretrained, we evaluate the diagnostic information in the embeddings from the encoder of PedSleepMAE. Using rich EHR data and clinician-verified sleep events, we assess how well various sleep events are separated in the embedding space, both quantitatively and qualitatively. 

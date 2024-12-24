@@ -10,7 +10,7 @@ The dataset is available to download from [Physionet](https://physionet.org/cont
 
 
 ## 1. Dataset Preparation and Preprocessing
-Each patient has an EDF file containing raw sleep signals and an annotation file documenting events such as sleep stages, apnea, and other physiological occurrences. These files are processed into the **HDF5** format to enable efficient and scalable data access during training. 
+Each sleep study has an EDF file containing raw sleep signals, electronic health records (EHR) and an annotation file documenting events such as sleep stages, apnea, and other physiological occurrences. These files are processed into the **HDF5** format to enable efficient and scalable data access during training. 
 
 From the raw data, the 16 most common modalities identified in the study are extracted, and all signals are standardized for consistency. Each sleep example is first converted into an individual HDF5 file, which includes patient and study IDs, sleep stage labels, and event labels such as apnea, hypopnea, oxygen desaturation, and EEG arousal. To optimize training workflows, 128 individual examples are then grouped into a single HDF5 batch file. This pipeline ensures fast data access, efficient batching, and scalability for machine learning workflows.
 

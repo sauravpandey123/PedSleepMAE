@@ -23,7 +23,7 @@ conda activate pedsleep_env
 We work with the **Nationwide Children's Hospital (NCH) Sleep DataBank**, a large, public, and fairly recent pediatric Polysomnography (PSG) dataset collected in a real clinical setting. 
 The dataset is available to download from [Physionet](https://physionet.org/content/nch-sleep/3.1.0/). Please take a look at the requirements that need to be met before the dataset can be downloaded. 
 
-**Note:** All the Python scripts mentioned in the following documentation are located inside the `scripts` directory.
+**Note: All the Python scripts mentioned in the following documentation are located inside the `scripts` directory.**
 
 ## :package:  1. Dataset Preparation and Preprocessing
 Each sleep study has an EDF file containing raw sleep signals, electronic health records (EHR), and an annotation file documenting events such as sleep stages, apnea, and other physiological occurrences. These files are processed into the **HDF5** format to enable efficient and scalable data access during training. 

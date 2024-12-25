@@ -69,7 +69,10 @@ Run `4_2_generate_average_examples.py` to handle the above operations.
 Run `4_3_channel_imputation.py` to run the experiment for missing channel imputation, where we systematically remove one channel at a time and let PedSleepMAE reconstruct the missing signal based on the other 15 channels. 
 
 # :memo: BibTeX
+If you use any content of this repository for your work, please cite the following bib entry:
+
 `Coming Soon after the Proceedings is out`
+
 
 # :scroll: License
 

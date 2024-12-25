@@ -72,4 +72,4 @@ Run `4_3_channel_imputation.py` to run the experiment for missing channel imputa
 `Coming Soon after the Proceedings is out`
 
 # :scroll: License
-
+Please read the [MIT License](https://github.com/sauravpandey123/PedSleepMAE/blob/main/LICENSE) statement provided in the repo. 

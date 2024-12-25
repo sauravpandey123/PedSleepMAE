@@ -15,6 +15,7 @@ git clone https://github.com/sauravpandey123/PedSleepMAE.git
 cd PedSleepMAE
 conda env create -f environment.yml
 conda activate pedsleep_env
+```
 
 
 # :computer: User Guide 

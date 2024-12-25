@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 from random import shuffle, seed
-import sleep_study as ss
+import dataset_preparation as ss
 import h5py
 from glob import glob
 import torch
@@ -31,12 +31,12 @@ def save_sample_to_hdf5(signal, sleep_label, apnea_label, desat_label, eeg_label
 
         
 def main():
-    parser = argparse.ArgumentParser(description="Process sleep EDF files and generate HDF5 files.")
+    parser = argparse.ArgumentParser(description="Process sleep EDF files and generate HDF5 files.", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     required_args = parser.add_argument_group("required arguments")
     required_args.add_argument("--dataset_dir", type=str, required=True, 
                                help="Path to the main dataset directory (e.g., '/home/NCH_Sleep_data').")
     required_args.add_argument("--edf_dir", type=str, required=True, 
-                               help="Path to the directory containing EDF files ((e.g., '/home/NCH_Sleep_data/Sleep_Data').")
+                               help="Path to the directory containing EDF files (e.g., '/home/NCH_Sleep_data/Sleep_Data').")
 
     parser.add_argument("--random_state", type=int, default=42, 
                         help="Random seed for reproducibility (default: 42).")
@@ -56,8 +56,7 @@ def main():
     os.makedirs(hdf_all_dir, exist_ok = True)
     os.makedirs(hdf_batches_dir, exist_ok = True)
 
-    filtered_edf_files = [file for file in edf_files if file not in ignore_files][:3] #this comes from the ignore_files.py file
-    print (filtered_edf_files)
+    filtered_edf_files = [file for file in edf_files if file not in ignore_files] #this comes from the ignore_files.py file
     seed(random_state)
     shuffle(filtered_edf_files)
     logger.info("*************************")

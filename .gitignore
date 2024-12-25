@@ -1,0 +1,14 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+
+utils/__pycache__/
+checkpoint/
+experiments_config/PWS/pws_embeddings.npz
+experiments_config/PWS/non_pws_embeddings.npz

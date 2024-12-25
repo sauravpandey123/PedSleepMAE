@@ -3,7 +3,9 @@ import seaborn as sns
 import os
 import matplotlib.pyplot as plt
 import argparse
+import sys
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from sklearn.metrics import silhouette_score
 from experiments_config.PWS.silhouette_calculations import *
 from utils.misc import setup_seed

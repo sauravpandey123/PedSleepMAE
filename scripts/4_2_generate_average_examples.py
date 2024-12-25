@@ -4,6 +4,8 @@ import argparse
 import torch
 import h5py
 
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from sklearn.neighbors import NearestNeighbors
 from random import shuffle
 from torch.utils.data import DataLoader

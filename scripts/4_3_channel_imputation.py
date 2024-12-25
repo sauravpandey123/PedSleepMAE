@@ -7,6 +7,7 @@ import numpy as np
 import h5py
 import scipy
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from sklearn.neighbors import NearestNeighbors
 from random import shuffle
 from torch.utils.data import DataLoader

@@ -8,7 +8,9 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import confusion_matrix
 import h5py
+import sys
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from random import shuffle
 from classifier_config.dataloader import get_dataloader
 from classifier_config.MAE_model_downstream import PedSleepMAE

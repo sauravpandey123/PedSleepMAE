@@ -3,13 +3,15 @@ import os
 import pandas as pd
 import numpy as np
 from random import shuffle, seed
-import dataset_preparation as ss
 import h5py
 from glob import glob
 import torch
 import argparse
 from loguru import logger
+import sys
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import dataset_preparation as ss
 from utils.generate_labels import *  
 from utils.ignore_files import ignore_files
 from utils.preprocess_edf import *

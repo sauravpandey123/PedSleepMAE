@@ -2,7 +2,9 @@ import os
 import argparse
 import torch
 from random import shuffle
+import sys
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from pretrain_config.MAE_dataloader import get_dataloader
 from pretrain_config.MAE_pretraining_utils import *
 from pretrain_config.MAE_model import PedSleepMAE  

@@ -6,7 +6,9 @@ import torch.nn as nn
 import numpy as np
 import h5py
 import warnings
+import sys
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from random import shuffle
 from classifier_config.MAE_model_downstream import PedSleepMAE
 from utils.misc import setup_seed

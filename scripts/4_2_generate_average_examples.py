@@ -149,7 +149,7 @@ if __name__ == "__main__":
     parser.add_argument("--directory_path", type=str, default='hdf5_individual_files', 
                         help="Path to the directory containing INDIVIDUAL HDF5 files")
     parser.add_argument("--needed_patient_ID", type=str, default='4768', help="Patient ID to process")
-    parser.add_argument("--checkpoint_file", type=str, default='checkpoint/m15p8_checkpoint.pt', help="Path to the MAE checkpoint file")
+    parser.add_argument("--checkpoint_file", type=str, default='../checkpoint/m15p8_checkpoint.pt', help="Path to the MAE checkpoint file")
     parser.add_argument("--output_dir", type=str, default='avg_example_plots', help="Directory to save output plots")
     parser.add_argument("--batch_size", type=int, default=64, help="Batch size")
     parser.add_argument("--patch_size", type=int, default=8, help="Patch size for the model")

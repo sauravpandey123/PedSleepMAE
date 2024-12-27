@@ -127,7 +127,7 @@ if __name__ == "__main__":
         
     parser.add_argument('search_label', type=str, choices=valid_labels.keys(), help='Label to plot UMAP on', default='sleep_label')
 
-    parser.add_argument("--checkpoint_file", type=str, default = 'checkpoint/m15p8_checkpoint.pt', help="Path to the MAE checkpoint file.")
+    parser.add_argument("--checkpoint_file", type=str, default = '../checkpoint/m15p8_checkpoint.pt', help="Path to the MAE checkpoint file.")
     parser.add_argument("--seed", type=int, default=42, help="Random seed.")
     parser.add_argument("--directory_path", type=str, default="hdf5_individual_files", help="Path to the dataset directory containing INDIVIDUAL hdf files.")
     parser.add_argument("--umap_dir", type=str, default="umap_plots", help="Directory to save UMAP plots.")

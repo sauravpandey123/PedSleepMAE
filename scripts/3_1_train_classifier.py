@@ -196,7 +196,7 @@ if __name__ == "__main__":
                               'e (EEG arousal), d (oxygen desaturation), s (sleep scoring).'))
     
     
-    parser.add_argument('--checkpoint_file', type=str, default='checkpoint/m15p8_checkpoint.pt',
+    parser.add_argument('--checkpoint_file', type=str, default='../checkpoint/m15p8_checkpoint.pt',
                         help=f'Path to the MAE checkpoint file.')
     parser.add_argument('--checkpoint_dir', type=str, default='saved_models',
                         help=f'Directory to save model checkpoints.')

@@ -123,7 +123,7 @@ def main():
     
     batch_index = 0
     for i, file_path in enumerate(individual_files[:num_files_to_process]):
-        sleep_file =  (file_path.split("/")[1])
+        sleep_file =  (file_path.split("/")[-1])
         ids = sleep_file.split("_")
         patID = int(ids[0])
         studID = int(ids[1])

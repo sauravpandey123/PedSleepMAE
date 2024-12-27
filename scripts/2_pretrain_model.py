@@ -104,7 +104,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Training script for MAE with configurable parameters.", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     
-    parser.add_argument('--dataset_dir', type=str, help="Path to the grouped dataset directory.", default = 'hdf_batches')
+    parser.add_argument('--dataset_dir', type=str, help="Path to the combined HDF5 data.", default = 'hdf_batches')
     parser.add_argument('--seed', type=int, default=42, help="Random seed for reproducibility.")
     parser.add_argument('--batch_size', type=int, default=32, help="Batch size for training.")
     parser.add_argument('--mask_ratio', type=int, default=15, help="Mask ratio for training.")

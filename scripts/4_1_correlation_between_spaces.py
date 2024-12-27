@@ -162,7 +162,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=description, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('method', type=str, choices=valid_labels, help='Method to Calculate Distances', default='euclidean')
 
-    parser.add_argument("--checkpoint_file", type=str, default = 'checkpoint/m15p8_checkpoint.pt', help="Path to the checkpoint file.")
+    parser.add_argument("--checkpoint_file", type=str, default = '../checkpoint/m15p8_checkpoint.pt', help="Path to the checkpoint file.")
     parser.add_argument("--seed", type=int, default=42, help="Random seed.")
     parser.add_argument("--dataset_directory_path", type=str, default="hdf5_individual_files", help="Path to the dataset directory containing INDIVIDUAL hdf files.")
     parser.add_argument("--output_dir", type=str, default="avg_example_plots", help="Directory to save the correlation plots.")
